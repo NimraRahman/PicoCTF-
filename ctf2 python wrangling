@@ -1,0 +1,14 @@
+check hits
+
+$ wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/ende.py
+$ wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/flag.txt.en
+$ wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/pw.txt
+$ cat pw.txt
+67c6cc9667c6cc9667c6cc9667c6cc96
+$ python ende.py -d flag.txt.en
+flag: picoCTF{4p0110_1n_7h3_h0us3_67c6cc96}
+
+Explanation:
+// $ cat ende.py
+// there is python script that provide guideline b/c when we $ cat flag.txt.en <-- this give encrypted bash flag. So, we first use run ende.py than 
+   we place -d which decrypts flag.txt.en and gives the ctf flag
