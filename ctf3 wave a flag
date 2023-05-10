@@ -1,0 +1,7 @@
+$ wget https://mercury.picoctf.net/static/cfea736820f329083dab9558c3932ada/warm
+$ ./warm
+permission denied so we use chmod with +x which change the mode of the file and make it executable 
+$ chmod +x warm
+$ ./warm
+$ ./warm -h
+flag: picoCTF{b1scu1ts_4nd_gr4vy_30e77291}
